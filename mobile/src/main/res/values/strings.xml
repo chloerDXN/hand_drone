@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">handdrone</string>
+    <string name="app_name">Handdrone</string>
+    <string name="Pair">Pair</string>
+    <string name="action_favorite">++</string>
 </resources>
