@@ -20,6 +20,24 @@ allprojects {
         google()
         jcenter()
     }
+
+    // WearService.java added in project from Lab 3 for communication between tablet and watch
+
+    // Constants defined for all modules, to avoid typing mistakes
+    // We use it for communication using the Wear API
+    // It is a key-value mapping, auto-prefixed with ”W_” for convenience
+    project.ext {
+        constants = [
+                path_start_activity : "/START_ACTIVITY",
+                path_acknowledge : "/ACKNOWLEDGE",
+                example_path_asset : "/ASSET",
+                example_path_text : "/TEXT",
+                example_path_datamap : "/DATAMAP",
+                mainactivity : "MainActivity",
+                a_key : "a_value",
+                some_other_key : "some_other_value",
+        ]
+    }
 }
 
 task clean(type: Delete) {
