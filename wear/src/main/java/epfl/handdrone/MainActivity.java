@@ -2,6 +2,7 @@ package epfl.handdrone;
 
 import android.os.Bundle;
 import android.support.wearable.activity.WearableActivity;
+import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends WearableActivity {
@@ -17,5 +18,10 @@ public class MainActivity extends WearableActivity {
 
         // Enables Always-on
         setAmbientEnabled();
+    }
+
+    public void clickedTakeOffXmlCallback(View view) {
+        TextView textView = findViewById(R.id.TakeOffMessage)   ;
+        textView.setText("Ready to take off!");
     }
 }

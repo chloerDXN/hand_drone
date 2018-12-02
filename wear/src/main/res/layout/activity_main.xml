@@ -18,19 +18,29 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="65dp" />
+            android:layout_height="27dp" />
 
-        <ImageView
-            android:id="@+id/imageView3"
+        <TextView
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
-            android:layout_height="75dp"
-            android:adjustViewBounds="true"
+            android:layout_height="wrap_content"
+            android:text="@string/take_off_question" />
+
+        <ImageButton
+            android:id="@+id/takeOffButton"
+            android:layout_width="match_parent"
+            android:layout_height="133dp"
+            android:contentDescription="@string/takeOffDescr"
             android:cropToPadding="false"
+            android:onClick="clickedTakeOffXmlCallback"
+            android:scaleType="fitCenter"
             android:src="@drawable/drone_icon3" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/TakeOffMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_hint" />
     </LinearLayout>
 
 </android.support.wear.widget.BoxInsetLayout>
