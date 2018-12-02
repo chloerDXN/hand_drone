@@ -9,4 +9,12 @@
     <string name="takeOffDescr">quadricopter take off icon</string>
     <string name="button_hint">plz click drone</string>
     <string name="take_off_question">Take Off?</string>
+    <string name="main_text" />
+    <string name="main_descr">Sensor Values:</string>
+    <string name="battery_charge_value" />
+    <string name="acc_value_x" />
+    <string name="acc_value_y">0</string>
+    <string name="acc_value_z" />
+    <string name="textview">TextView</string>
+    <string name="sensor_name">sensor</string>
 </resources>
