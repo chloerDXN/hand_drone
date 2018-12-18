@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wear.widget.BoxInsetLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey"
+    android:padding="@dimen/box_inset_layout_padding"
+    tools:context=".LauncherActivity"
+    tools:deviceIds="wear">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="27dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/take_off_question" />
+
+        <ImageButton
+            android:id="@+id/takeOffButton"
+            android:layout_width="match_parent"
+            android:layout_height="133dp"
+            android:contentDescription="@string/takeOffDescr"
+            android:cropToPadding="false"
+            android:onClick="clickedTakeOffXmlCallback"
+            android:scaleType="fitCenter"
+            android:src="@drawable/drone_icon3" />
+
+        <TextView
+            android:id="@+id/TakeOffMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_hint" />
+    </LinearLayout>
+
+</android.support.wear.widget.BoxInsetLayout>
