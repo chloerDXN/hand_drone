@@ -20,6 +20,7 @@ allprojects {
         google()
         jcenter()
     }
+<<<<<<< HEAD
 
     // WearService.java added in project from Lab 3 for communication between tablet and watch
 
@@ -42,6 +43,10 @@ allprojects {
 
 
 
+=======
+}
+
+>>>>>>> e224c7db409acf8d3bc463f6f9fd44733edd691c
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
