@@ -29,7 +29,7 @@ public class FlyingActivity extends WearableActivity implements SensorEventListe
 
         // Get an instance of the SensorManager
         final SensorManager sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
-        acc_sensor = sensorManager.getDefaultSensor(Sensor.TYPE_LINEAR_ACCELERATION);
+        acc_sensor = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);//TYPE_LINEAR_ACCELERATION);
         sensorManager.registerListener(this, acc_sensor, SensorManager.SENSOR_DELAY_UI);
 
         // Get an instance of the PowerManager
