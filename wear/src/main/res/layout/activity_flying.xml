@@ -6,8 +6,14 @@
     android:layout_height="match_parent"
     android:gravity="center_vertical|center_horizontal"
     android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
     tools:context=".FlyingActivity">
 
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -16,6 +22,27 @@
         android:visibility="visible"
         app:srcCompat="@drawable/drone_icon3" />
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:paddingLeft="@dimen/screen_percentage_10"
+        android:paddingRight="@dimen/screen_percentage_10"
+        android:showText="true"
+        android:text="Mode"
+        android:textOff="XY"
+        android:textOn="Z"
+        tools:checked="false" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="22dp"
@@ -23,7 +50,7 @@
         android:onClick="clickedStopFlyingXmlCallback"
         android:src="@android:drawable/btn_dialog" />
 
-        <!--<TextView
+    <!--<TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
