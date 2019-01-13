@@ -1,34 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
     tools:context=".FlyingActivity">
 
-    <LinearLayout
-        android:layout_width="197dp"
-        android:layout_height="197dp"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="177dp"
-            android:layout_height="54dp"
-            android:visibility="visible"
-            app:srcCompat="@drawable/drone_icon3" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="177dp"
+        android:layout_height="54dp"
+        android:visibility="visible"
+        app:srcCompat="@drawable/drone_icon3" />
 
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="22dp"
-            android:layout_height="17dp"
-            android:onClick="clickedStopFlyingXmlCallback"
-            android:src="@android:drawable/btn_dialog" />
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="22dp"
+        android:layout_height="17dp"
+        android:onClick="clickedStopFlyingXmlCallback"
+        android:src="@android:drawable/btn_dialog" />
 
-        <TextView
+        <!--<TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -146,7 +141,6 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="12dp" />
+            android:layout_height="12dp" />-->
 
-    </LinearLayout>
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
