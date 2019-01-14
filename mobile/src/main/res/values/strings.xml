@@ -2,4 +2,5 @@
     <string name="app_name">Handdrone</string>
     <string name="Pair">Pair</string>
     <string name="action_favorite">++</string>
+    <string name="no_nearby_device">No nearby device.</string>
 </resources>
